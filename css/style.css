@@ -1,0 +1,626 @@
+body {
+    overflow-x: hidden;
+}
+h3 {
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 3px;
+}
+h4 {
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    position: relative;
+    bottom: -4px;
+}
+p {
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 1rem;
+}
+.table {
+    display: inline-block;
+    width: 200px;
+    height: 36px;
+    margin: 50px auto;
+    padding: 1px;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.triangle-left, .triangle-left::after {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent; 
+    border-right: 12px solid #000; 
+    border-bottom: 6px solid transparent;
+    position: relative;
+    top: -28px;
+    right: -11px;
+    cursor: pointer;
+    }
+.triangle-left::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -6px;
+}    
+.triangle-right, .triangle-right::after {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent; 
+    border-left: 12px solid #000; 
+    border-bottom: 6px solid transparent;
+    position: relative;
+    top: -40px;
+    right: -173px;
+    cursor: pointer;
+    }
+.triangle-right::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    } 
+.line {
+    width: 80%;
+    height: 3px;
+    position: relative;
+    margin: auto;
+    top: -69px;
+    }
+.img-tea {
+    margin: 20px 0;
+    width: 70%;
+    }   
+.content-block {
+   height: 470px;
+}
+.price {
+    width: 80%;
+    height: 33px;
+    border: 2px solid #BEBEBE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: auto;
+    background-color: #fff;
+    }
+.price-triangle-left, .price-triangle-right {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #9BB52D; 
+    border-left: 6px solid transparent; 
+    border-right: 6px solid transparent;
+    }
+.price-triangle-left {
+    top: -20px;
+    right: -10px;
+}
+.price-triangle-right {
+    top: -32px;
+    left: 137px;
+}
+.btn {
+    width: 140px;
+    background-color: #9BB52D;
+    border-radius: 2px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+    color: #000;
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* ----------------------------------------header---------------------- */
+header {
+    margin-top: 50px;
+}
+.bgc-green {
+    background-color: #E1E9C0;
+}
+/* ---------------------------------------menu------------------------- */
+.main-menu {
+    width: 100%;
+    height: 100px;
+}
+.logo {
+    position: absolute;
+}
+.black {
+    margin-right: 400px;
+}
+.main-menu {
+    margin: 0;
+    justify-content: center;
+}
+.navbar {
+    padding: 0; 
+}
+.navbar li {
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+.navbar-brand {
+    padding: 0;
+}
+.main-menu ul li a {
+    color: #000;
+}
+.main-menu ul li a::after{
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #000;
+	height: 2px;
+	transform: scale(0);
+	transition: all .3s;
+}
+.main-menu ul li a:hover::after{
+	transform: scale(1);
+}
+/* --------------------------------------carousel-tea-front---------------- */
+.carousel-tea-front {
+    margin: 50px auto;
+    width: 60%;
+    height: auto;
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.carousel-indicators li.active {
+    background-color: #9BB52D;
+}
+.carousel-tea-front .table {
+    background-color: #9bb515;
+    text-align: center;
+    position: absolute;
+    width: 160px;
+}
+/* ----------------------------------dop-blocks------------------- */
+.questions, .basket {
+    display: inline-block;    
+    padding: 1px;
+    z-index: 3;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+    background-color: #9bb515;
+    text-align: center;
+    cursor: pointer;
+}
+.questions {
+    width: 120px;
+    height: 27px;
+    transform: rotate(90deg);
+    left: -45px;
+    top: 125px;
+}
+.questions h3, .basket h3 {
+    font-size: 16px;
+}
+.basket {
+    width: 120px;
+    top: 277px;
+    height: 27px;
+    transform: rotate(-90deg);    
+    position: absolute;
+    right: -44px;
+
+}
+.screen-tone {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 1;
+    transition: all ease 2s;
+}
+.hidden {
+    display: none;
+    transition: all ease 2s;
+}
+.block-questions, .block-basket {
+    width: 370px;
+    height: 550px;
+    border: 1px solid #000;
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+    transition: all ease 1s;
+}
+.block-questions {
+    left: -370px;
+}
+.q-header, .b-header {
+margin-top: 50px;
+padding: 10px;
+}
+.q-header h4, .b-header h4 {
+margin-top: -10px;
+}
+.q-content {
+    width: 80%;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+}
+.q-text {
+    background-color: #fff;
+    width: 210px;
+    /*height: 50px;*/
+    border-radius: 3px 15px 15px 15px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px;
+}
+.q-btn {
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    background-color: #fff;
+    border: 3px solid #9BB52D;
+    border-radius: 5px;
+}
+.q-btn:hover {
+    background-color: #ccc;
+}
+input {
+    width: 90%;
+    height: 55px;
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    border-radius: 15px;
+}
+.block-basket {
+    right: -370px;
+    top: 177px;
+}
+.block-cart {
+    height: 350px;
+}
+/* -------------------------------------green-tea--------------------- */
+.green-tea {
+    background-color: #E1E9C0;
+    background-size: cover;
+    position: relative;  
+    background-position: center center;      
+    background-repeat: no-repeat;  
+    padding-bottom: 5%;  
+}
+.green-tea .table {
+    background-color: #9bb515;
+}
+.green-tea .line {
+    background-color: #fff;
+}
+.green-tea .col {
+   margin: 5px;
+   padding: 0;
+}
+.green-tea .main-tea-block {
+    background-color:#fff;
+    padding: 5px;
+}
+
+/* ------------------------white-tea-------------------------------------- */
+.white-tea {
+    background-color: #fff;
+    background-size: cover;
+    position: relative;  
+    background-position: center center;      
+    background-repeat: no-repeat;  
+    padding-bottom: 5%;  
+}
+.white-tea .table {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.white-tea .line {
+    background-color: #000;
+}
+.white-tea .col {
+   margin: 5px;
+   padding: 0;
+}
+.white-tea .main-tea-block {
+    background-color:#969796;
+    padding: 5px;
+}
+/* ------------------------------------------edge------------------------------------ */
+.edge .main-tea-block {
+    height: 90%;
+    margin-top: 15%;
+    opacity: 0.4;
+}
+.edge .img-tea {
+    width: 60%;
+}
+.edge h3{
+    font-size: 20px;
+}
+.edge p {
+    font-size: 13px;
+}
+.edge .content-block{
+    height: 400px;
+}
+/* --------------------------------------red-tea--------------------------- */
+.red-tea {
+    background-color: #ecb7b3;
+    background-size: cover;
+    position: relative;  
+    background-position: center center;      
+    background-repeat: no-repeat;  
+    padding-bottom: 5%;  
+}
+.red-tea .table {
+    background-color: #DD352A;
+}
+
+.red-tea .line {
+    background-color: #fff;
+}
+.red-tea .col {
+   margin: 5px;
+   padding: 0;
+}
+.red-tea .main-tea-block {
+    background-color:#fff;
+    padding: 5px;
+}
+.red-tea .triangle-right, .red-tea .triangle-right::after {
+    border-left: 12px solid #fff; 
+} 
+.red-tea .triangle-left, .red-tea .triangle-left::after {
+    border-right: 12px solid #fff; 
+}
+/* --------------------------------------additives-tea--------------------------- */
+.additives-tea {
+    background-color: #e3d0f7;
+    background-size: cover;
+    position: relative;  
+    background-position: center center;      
+    background-repeat: no-repeat;  
+    padding-bottom: 5%;  
+}
+.additives-tea .table {
+    background-color: #b54bde;
+    width: 245px;
+}
+
+.additives-tea .line {
+    background-color: #fff;
+}
+.additives-tea .col {
+   margin: 5px;
+   padding: 0;
+}
+.additives-tea .main-tea-block {
+    background-color:#fff;
+    padding: 5px;
+}
+.additives-tea .triangle-right, .additives-tea .triangle-right::after {
+    border-left: 12px solid #fff; 
+} 
+.additives-tea .triangle-right {
+    right: -220px;
+}
+.additives-tea .triangle-left, .additives-tea .triangle-left::after {
+    border-right: 12px solid #fff; 
+} 
+/* -------------------------------------black-tea--------------------- */
+.black-tea {
+    background-color: #E1E9C0;
+    background-size: cover;
+    position: relative;  
+    background-position: center center;      
+    background-repeat: no-repeat;  
+    padding-bottom: 5%;  
+}
+.black-tea .table {
+    background-color: #000;
+}
+.black-tea .table h3 {
+    color: #fff;
+}
+.black-tea .line {
+    background-color: #fff;
+}
+.black-tea .col {
+   margin: 5px;
+   padding: 0;
+}
+.black-tea .main-tea-block {
+    background-color:#fff;
+    padding: 5px;
+}
+.black-tea .triangle-right, .black-tea .triangle-right::after {
+    border-left: 12px solid #fff; 
+} 
+.black-tea .triangle-left, .black-tea .triangle-left::after {
+    border-right: 12px solid #fff; 
+} 
+/* ---------------------------accessuares----------------------- */
+.ACCESSORIES {
+    background-color: #fcffae;
+    background-size: cover;
+    position: relative;  
+    background-position: center center;      
+    background-repeat: no-repeat;  
+    padding-bottom: 5%;  
+}
+.ACCESSORIES .table {
+    background-color: #dac800;
+    width: 245px;
+}
+.black-tea .table h3 {
+    color: #fff;
+}
+.ACCESSORIES .line {
+    background-color: #fff;
+}
+.ACCESSORIES .col {
+   margin: 5px;
+   padding: 0;
+}
+.ACCESSORIES .main-tea-block {
+    background-color:#989998;
+    padding: 5px;
+}
+.ACCESSORIES .triangle-right, .ACCESSORIES .triangle-right::after {
+    border-left: 12px solid #fff; 
+} 
+.ACCESSORIES .triangle-left, .ACCESSORIES .triangle-left::after {
+    border-right: 12px solid #fff; 
+} 
+.ACCESSORIES .triangle-right {
+    right: -220px;
+}
+.ACCESSORIES .content-block {
+    height: 300px;
+}
+.ACCESSORIES .edge .content-block {
+    height: 250px;
+}
+.ACCESSORIES .edge .main-tea-block{
+    margin-top: 12%;
+}
+/* ---------------------------------------footer------------------ */
+.footer {
+    height: 150px;
+}
+.block-social {
+text-align: right;
+}
+
+
+
+/* -----------------------------media----------------------- */
+@media only screen and (max-width : 1200px) {
+p {
+    font-size: 14px;
+}
+.price-triangle-right {
+    left: 113px;
+}
+}
+@media only screen and (max-width : 992px) {
+ .row {
+    justify-content: left;
+ }
+.logo {
+     left: 50%;
+     transform: translate(-50%);
+ }
+ .navbar {
+    margin-left: 10px;
+}
+p {
+    font-size: 13px;
+}
+.edge p {
+    font-size: 12px;
+}
+.price-triangle-left {
+    right: -4px;
+}
+.price-triangle-right {
+    left: 107px;
+}
+}
+@media only screen and (max-width : 768px) {
+.carousel-tea-front    {
+    width: 80%;
+}
+}
+@media only screen and (max-width : 576px) {
+.carousel-tea-front    {
+    width: 90%;
+    }
+.logo, .footer-logo {
+width: 173px;
+    }
+.main-menu {
+    height: 63px;
+}
+.basket {
+    top: 237px;
+}
+.img-tea {
+    width: 35%;
+}
+.main-tea-block {
+    width: 60%;
+    margin: auto;
+    padding: 10px 20px;
+}
+.content-block {
+    height: 360px;
+}
+.price-triangle-right {
+    left: 90%;
+}
+.price-triangle-left {
+    right: -15px;
+}
+.block-social img {
+    width: 20px;
+}
+}
+@media only screen and (max-width : 480px) {
+    h3 {
+        font-size: 21px;
+    }
+    .table {
+        height: 33px;
+    }
+    .line {
+        width: 90%;
+    }
+    .price-triangle-right {
+        left: 85%;
+    }   
+    .main-tea-block {
+        width: 80%;
+        margin: auto;
+        padding: 10px 20px;
+    }
+}
+@media only screen and (max-width : 380px) {
+    .block-social {
+        text-align-last: left;
+     }
+}
